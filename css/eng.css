@@ -1,0 +1,93 @@
+﻿body {
+	font-family:Constantia,sans-serif;
+	font-size:20px;
+}
+a {
+	text-decoration:none;
+}
+img{
+	border:1px solid #460444;
+	border-radius:7px;
+
+}
+.ststr{
+	text-align:center;
+	font-size:40px;
+	color:#f334ef;
+	text-shadow:-2px 1px #3a0339;
+}
+.stbt{
+	cursor: pointer;
+	text-align:center;
+	color:#f334ef;
+	font-size:20px;
+	text-shadow:-1px 1px #3a0339;
+	border:1px #b60ab1;
+	background-color:#b60ab1;
+}
+.stbt:hover{
+	transition:0.6s ease;
+	color:#f872f4;
+}
+/*.brc{
+	background-color:#f440f0;
+	position:relative;
+	left:-10px;
+	right:-200px;
+	height:800px;
+}*/
+.slider_container {
+	max-width:800px;
+	position:relative;
+	margin:5 auto;
+	margin
+}
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color:#fff;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+}
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+	background-color: rgba(70,4,68,0.9);
+}
+.text {
+	color: #fff;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+	text-align: center;
+}
+.ago {
+	cursor: pointer;
+	height: 13px;
+	width: 13px;
+	margin: 0 2px;
+	background-color: #f440f0;
+	border-radius: 50%;
+	display: inline-block;
+	transition: 0.6s ease;
+}
+.active, .ago:hover {
+	background-color: #460444;
+}
+.fade {
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+@keyframes fade {
+	from{opacity: 0.4}
+	to{opacity: 1}
+}
