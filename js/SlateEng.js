@@ -44,48 +44,12 @@ function SlideAdd(){
 		ae[i].style.display="none";
 		a[i].className=a[i].className.replace(" active","");
 	}
-	console.log("is:"+n);
 	d[n].style.display="block";
 	as[n].style.display="block";
 	ae[n].style.display="block";
 	a[n].className=a[n].className+=" active";
 }
-function showSlides(n) {
-	var i;
-	var myslides = document.getElementsByClassName("myslide");
-	var slider_pointer=document.getElementsByClassName("slider_pointer");
-	if (n > myslides.length){
-		slideIndex = 1;
-	}
-	if (n<1) {
-		slideIndex = myslides.length;
-	}
-	for (i=0; i < myslides.length; i++) {
-		myslides[i].style.display = "none";
-	}
-	for (i=0; i<slider_pointer.length; i++) {
-		slider_pointer[i].className =slider_pointer[i].className.replace(" active","");
-	}
-	myslides[slideIndex -1].style.display = "block";
-	slider_pointer[slideIndex -1].className+= " active";
-}
-function centerobj(cls,clo,nm){
-	var a=document.getElementsByClassName(cls),u;
-	u=document.getElementsByClassName(clo);
-	var s=a[0].clientWidth,f=u[0].clientWidth+parseInt(u[0].style.borderWidth)*2;
-	var b=u[0].style.borderWidth;
-	var p=(s%2==1)?(s-1)/2:s/2,m=p-((f%2==0)?f/2:(f-1)/2);
-	u[0].style.width=(f%2!=s%2)?(f+((s%2==0)?-1:1)+2):f+2;
-	u[0].style.left=m+"px";
-	console.log(m+" "+p+" "+f+" "+s+" "+((f%2!=s%2)));
-	console.log(u[0].clientWidth); 
-}
 function isSd(is){
 	s=is;
-	var s=(document.body.clientWidth)? document.body: document.documentElement;
-	var a=document.getElementsByClassName("stpl");
-	alert(document.body.clientWidth);
-	console.log(a[0].clientWidth);
-	centerobj("stpl","ftrpo",0);
 	circle();
 }
