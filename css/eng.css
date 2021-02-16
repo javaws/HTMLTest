@@ -45,12 +45,14 @@ img{
 	color:#fff;
 	font-weight: bold;
 	font-size: 18px;
-	transition: 0.6s ease;
-	border-radius: 0 3px 3px 0;
+	/*transition: 0.6s ease;*/
+	border-radius: 3px 3px 3px 3px;
 }
 .next {
 	right: 0;
-	border-radius: 3px 0 0 3px;
+}
+.prev{
+	left:0;
 }
 .prev:hover, .next:hover {
 	background-color: rgba(70,4,68,0.9);
@@ -75,12 +77,4 @@ img{
 }
 .active, .ago:hover {
 	background-color: #460444;
-}
-.fade {
-	animation-name: fade;
-	animation-duration: 1.5s;
-}
-@keyframes fade {
-	from{opacity: 0.4}
-	to{opacity: 1}
 }
