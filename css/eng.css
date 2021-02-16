@@ -29,7 +29,7 @@ img{
 	transition:0.6s ease;
 	color:#f872f4;
 }
-.slider_container {
+.sc {
 	max-width:800px;
 	position:relative;
 	margin:5 auto;
